@@ -1,0 +1,10 @@
+nav{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border-radius: 20px;
+    box-shadow: 0 0 8px #000000be;
+    background: #000;
+    color: #ffff;
+}

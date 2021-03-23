@@ -1,5 +1,9 @@
 import Header from './component/header/Header'
+import Body from './component/body/Body'
+import Footer from './component/footer/Footer'
+
 import './App.css';
+
 
 //exo1
 /* function App() {
@@ -69,12 +73,12 @@ import React, { Component } from 'react'
 function App() {
   return (
 
-    <div className="bg-danger">
+    <div>
       <Header />
-      <div className="bg-warning container">
-      <p>trololo</p>
-      </div>
+      <Body />
+      <Footer />
     </div>
+    
   );
 }
 

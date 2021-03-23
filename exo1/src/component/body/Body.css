@@ -1,0 +1,17 @@
+.myH{
+    border-radius: 20px;
+    box-shadow: 0 0 8px #000000be;
+}
+.myli{
+    border-radius: 20px; 
+    list-style: none; 
+    box-shadow: 0 0 3px #000000be;
+}      
+.smallli{
+    border-radius: 20px; 
+    width: 60%;
+    list-style: none; 
+    box-shadow: 0 0 3px #000000be;
+}
+                    
+       
