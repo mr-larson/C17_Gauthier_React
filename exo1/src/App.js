@@ -39,7 +39,7 @@ export default class App extends Component {
 } */
 
 //exo3
-/* import React, { Component } from 'react'
+import React, { Component } from 'react'
 
 let dateCourante = new Date()
 
@@ -53,7 +53,7 @@ export default class App extends Component {
       </div>
     )
   }
-} */
+}
 
 // exo3 variante
 /* let dateCourante = new Date()
