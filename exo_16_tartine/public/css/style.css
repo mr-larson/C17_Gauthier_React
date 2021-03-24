@@ -9946,7 +9946,11 @@ h3 {
 }
 
 /* section 1 et 2 */ 
-.myimg {
+.myBody {
+  min-height: 100vh;
+  text-align: center;
+}
+.myBody .myimg {
   height: 30vh;
   border: groove 4px #FFF;
 }
