@@ -9948,7 +9948,9 @@ h3 {
 /* section 1 et 2 */ 
 .myBody {
   min-height: 100vh;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .myBody .myimg {
   height: 30vh;
@@ -9958,5 +9960,8 @@ h3 {
 /* section 3 et 4 */ 
 /* section 5 et 6 */ 
 /*footer*/
+.myFooter {
+  border-top: solid 10px #4ff725;
+}
 
 /*# sourceMappingURL=style.css.map */
