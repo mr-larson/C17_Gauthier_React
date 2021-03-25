@@ -3,14 +3,25 @@ import Header from './component/header/Header'
 import Body from './component/body/Body'
 import Footer from './component/footer/Footer'
 
-function App() {
-  return (
-    <div className="App">
+import React, { Component } from 'react'
+
+export default class App extends Component {
+
+  // inclus propriété et méthodes(if,for,forEach)
+
+  render() {
+
+    // inclus variables et if, for, forEach
+
+    return (
+
+      //inclus if et ADD vr2
+
+      <div>
         <Header/>
         <Body/>
         <Footer/>
-    </div>
-  );
+      </div>
+    )
+  }
 }
-
-export default App;

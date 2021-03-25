@@ -13,8 +13,8 @@ export default class Body extends Component {
         if (this.nombreArticle >=2) {
             currentPage = 
             <div>
-                <Article/> 
-                <Article/>
+                <Article title = "Nicky Larson" img = "./img/nicky.jpg"/> 
+                <Article title = "Gauthier" img = "./img/téléchargement.png"/>
             </div>
         }
         else{
