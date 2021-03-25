@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../src/sass/body/sectionB.sass"
+    ],
+    "names": [],
+    "file": "sectionB.css"
+}
