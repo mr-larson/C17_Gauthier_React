@@ -11,7 +11,7 @@ export default class Section1 extends Component {
         let tempsPHP = tempsJavaScript/1000
 
         return (
-            <section>
+            <section className = "section1 d-flex justify-content-center align-items-center">
 
                 { this.props.format === "jsTime" &&
                 <p>

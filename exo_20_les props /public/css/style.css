@@ -9932,9 +9932,31 @@ h3 {
   }
 }
 /*Header*/
+/*-------------- lien sass --------------*/
+/*---------------- style -------------*/
+.myNav {
+  border-radius: 10px;
+}
+
 /* section 1 et 2 */ 
+/*-------------- lien sass --------------*/
+/*---------------- style -------------*/
+.section1 {
+  min-height: 40vh;
+}
+
 /* section 3 et 4 */ 
+/*-------------- lien sass --------------*/
+/*---------------- style -------------*/
+.section2 {
+  min-height: 40vh;
+}
+
 /* section 5 et 6 */ 
+/*-------------- lien sass --------------*/
+/*---------------- style -------------*/
 /*footer*/
+/*-------------- lien sass --------------*/
+/*---------------- style -------------*/
 
 /*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@ export default class Nav extends Component {
             <nav className="navbar navbar-expand-lg navbar-light bg-danger">
                 <div className="container-fluid">
 
-                    <button onClick={()=>console.log('accueil')} className="navbar-brand" href="###">Navbar</button>
+                    <button onClick={()=>console.log('accueil')} className="navbar-brand" href="###">btn1</button>
                         
                 </div>
             </nav>
