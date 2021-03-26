@@ -1,6 +1,6 @@
-/*-------------- lien JSX --------------*/
+/*-------------- lien JSX Header--------------*/
 import Nav from './Nav'
-/*-------------- lien JSX --------------*/
+/*-------------- lien JSX  Body--------------*/
 import Section1 from '../body/Section1'
 import Section2 from '../body/Section2'
 
@@ -9,7 +9,7 @@ import React, { Component } from 'react'
 
 export default class Header extends Component {
 
-    currentPage ="heure"
+    currentPage = "heure"
 
     state = {
         formatTime : "phpTime"
@@ -37,7 +37,7 @@ export default class Header extends Component {
                     <Section2/>
                 }
                 {this.currentPage == "heure" &&
-                    <div>
+                    <div className = "d-flex justify-content-around align-items-end bg-primary pb-4">
                         <Section1 format={this.state.formatTime}/>
                         <button onClick={() => this.handleClick('jsTime')}>JavaScript</button>
                         <button onClick={() => this.handleClick('phpTime')}>PHP</button>
