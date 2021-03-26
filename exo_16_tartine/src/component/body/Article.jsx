@@ -4,6 +4,7 @@ export default class Article extends Component {
     render() {
         return (
             <div>
+                <button onClick={()=> this.props.giveNombreArticle(this.nombreArticle)}> quel est le titre?</button>
                 <div className="row">
                     <div className="col-sm-4 d-flex justify-content-center">
                         <img className="myimg m-2" src= {this.props.img} alt="nicky"/>
