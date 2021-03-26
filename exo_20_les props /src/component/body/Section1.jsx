@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Section1 extends Component {
 
     currentPage = "heure"
-
+    // Variable qui présente diffèrente heures
     render() {
 
         let dateCourante = new Date()
@@ -11,8 +11,9 @@ export default class Section1 extends Component {
         let tempsPHP = tempsJavaScript/1000
 
         return (
-            <section className = "section1 d-flex justify-content-center align-items-center">
-
+            //declaration des diffèrentes heures en fonction du format
+            <section className = "section1 d-flex justify-content-center align-items-center bg-success">
+                
                 { this.props.format === "jsTime" &&
                 <p>
                     Temps javascript : {tempsJavaScript} millisecondes
@@ -27,7 +28,7 @@ export default class Section1 extends Component {
 
                 { this.props.format === "humanTime" &&
                 <p>
-                    Date pour un humain : {dateCourante.getDate()}/{dateCourante.getMonth()}/{dateCourante.getFullYear()}
+                    Date pour un humain : {dateCourante.getDate()}/{dateCourante.getMonth()+1}/{dateCourante.getFullYear()}
                 </p>
                 }
 
