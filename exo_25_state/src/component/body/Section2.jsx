@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export default class Section2 extends Component {
     render() {
         return this.props.nom.map((pres) =>
-            <section className="section2 d-flex justify-content-center align-items-center bg-warning">
-                <h1>{pres.nom} {pres.prenom} {pres.age}ans</h1>
+            <section>
+                <div key={pres.id}> {pres.nom} {pres.prenom} {pres.age}ans</div>
             </section>
         )
     }

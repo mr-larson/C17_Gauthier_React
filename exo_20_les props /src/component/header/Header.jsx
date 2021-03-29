@@ -39,9 +39,9 @@ export default class Header extends Component {
                 {this.currentPage == "heure" &&
                     <div className = "d-flex justify-content-around align-items-end bg-primary pb-4">
                         <Section1 format={this.state.formatTime}/>
-                        <button onClick={() => this.handleClick('jsTime')}>JavaScript</button>
-                        <button onClick={() => this.handleClick('phpTime')}>PHP</button>
-                        <button onClick={() => this.handleClick('humanTime')}>Humain</button>
+                        <button onClick={() => this.handleClick('jsTime')} className = "myNav px-3 text-bold">JavaScript</button>
+                        <button onClick={() => this.handleClick('phpTime')} className = "myNav px-3 text-bold">PHP</button>
+                        <button onClick={() => this.handleClick('humanTime')} className = "myNav px-3 text-bold">Humain</button>
                     </div>
                 }
 

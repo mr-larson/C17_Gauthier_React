@@ -9958,5 +9958,9 @@ h3 {
 /*footer*/
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
