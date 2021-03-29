@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 
 export default class Section2 extends Component {
+
     render() {
+        console.log(this.props.nom);
         return this.props.nom.map((pres) =>
-            <section>
-                <div key={pres.id}> {pres.nom} {pres.prenom} {pres.age}ans</div>
+            
+            <section key={pres.id}>
+                <div> {pres.nom} {pres.prenom} {pres.age}ans</div>
             </section>
+        
         )
     }
 }

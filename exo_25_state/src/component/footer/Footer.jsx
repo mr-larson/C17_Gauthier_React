@@ -1,32 +1,36 @@
 
-
 import React, { Component } from 'react'
-import reactDom from 'react-dom'
+
 
 export default class Footer extends Component {
-
-    clientInput = React.createRef()
-
 
     // Tableau initial
     state = {
         clients:[
-            {id: 1, nom:"Shun"},
-            {id: 2, nom:"leon"},
-            {id: 3, nom:"Saitama"}
+            
         ],
-        
+        newClient: ""
     }
-    i = 4
-
+    i = this.state.clients.length+1
+    
+    // Permet de rentrer un nouveau client dans l'input
+    handleChange = (event) => {
+        const value = event.currentTarget.value
+        this.setState({newClient: value})
+    }
+    
     // Ajoute un client au tableau initial
     handleSubmit = (event) => {
         event.preventDefault()
-        const ajout = this.state.clients.slice()
-        ajout.push({id: this.i, nom:(this.clientInput.current.value)})
+        console.log(this.state);
+    
+        const nom = this.state.newClient
+        const client = {id: this.i, nom: nom}
         this.i++
+        const clients = /* [...this.state.clients] */ this.state.clients.slice()
+        clients.push(client)
+        this.setState({clients:clients})
 
-        this.setState({clients: ajout})
     }
 
     // Supprime un client du tableau
@@ -39,34 +43,35 @@ export default class Footer extends Component {
         this.setState({ clients: clients})
     }
 
-    
 
     render() {
         //ajout d'un titre
         const title = "Titre de la liste"
 
         // event de suppression
-        const elements = this.state.clients.map(client => (
-            <li>{client.nom} <button onClick={() => this.handleDelete(client.id)}>X</button></li>
+        const elements = this.state.clients.map((client) => (
+            <li key = {client.id}>{client.nom} <button onClick={() => this.handleDelete(client.id)}>X</button></li>
         ))
 
         return (
             <footer className="bg-primary p-5">
 
-                <h1 className="text-center">{title}</h1>
+                <div className="border-bottom border-dark mx-5">
+                    <h1 className="text-center">{title}</h1>
+                </div>
                 
-
                 <div className="d-flex justify-content-around align-items-center py-5">
-                    <ul className="bg-danger text-center p-3">
-                        {elements}
-                    </ul>
                     <form onSubmit={this.handleSubmit}>
-                        <input ref={this.clientInput} type="text" placeholder="Ajouter un client"/>
+                        <input value={this.state.newClient} onChange={this.handleChange} type="text" placeholder="Ajouter un client"/>
                         <button>Confirmer</button>
                     </form>
                 </div>
-
-
+                <div className="d-flex justify-content-around align-items-center py-3">
+                    <ul className="bg-danger text-center p-3">
+                        {elements}
+                    </ul>
+                </div>
+                
             </footer>
         )
     }
