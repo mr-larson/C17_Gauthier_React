@@ -18,13 +18,29 @@ export default class Panier extends Component {
         this.setState({ commandes: commandes})
     }
 
+    // Ajoute un article au tableau initial
+    handleSubmit = () => {
+        const nom = this.state.newArticle
+        const article = {id: this.i, nom: nom}
+        this.i++
+        const articles =  [...this.state.articles]
+        articles.push(article)
+        this.setState({articles:articles})
+
+    }
+
     render() {
 
         // event de suppression
         const panier = this.state.commandes.map((commande) => (
             <li key = {commande.id}>{commande.nom} <button onClick={() => this.handleDelete(commande.id)} className="btn bg-danger text-white">Rendre</button></li>
         ))
+
+        
+
         return (
+
+            //structure de la box mon panier
             <div className="py-3">
                 <h3>Mon panier :</h3>
                 <ul className="bg-secondary text-center p-3">

@@ -35,6 +35,15 @@ export default class Articles extends Component {
     handleBuy = ()=>{
         this.setState({money:this.props.money-1})
         console.log(this.props.money);
+
+        /* let myBox = document.getElementsByTagName("myBox")
+
+        if (this.props.stock == 1) {
+            myBox = {backgroundColor : "orange"}
+        }else if (this.props.stock == 0) {
+            myBox = {backgroundColor : "red"} */
+            
+        
     }
 
     render() {
@@ -47,7 +56,7 @@ export default class Articles extends Component {
                     <h4 className="py-4">{article.nom}</h4>
                     <p>Prix: {article.prix}€</p>
                     <p>Stock: {article.stock} unités</p>
-                    <button onClick={this.handleBuy} className=" btn bg-success rounded text-white p-2 ">Acheter</button>
+                    <button onClick={this.handleBuy} onClick={this.handleSubmit} className=" btn bg-success rounded text-white p-2 ">Acheter</button>
                 </div>               
             </div>
         ))
