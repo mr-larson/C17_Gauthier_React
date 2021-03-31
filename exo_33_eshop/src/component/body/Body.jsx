@@ -1,16 +1,21 @@
 /*-------------- lien JSX --------------*/
-import Section1 from './Section1'
+import Articles from './Articles'
 import Section2 from './Section2'
 
 import React, { Component } from 'react'
 
 export default class Body extends Component {
+    
+    
     render() {
+        const title = "Test Eshop"
         return (
-            <div>
-                <Section1/>
+            <section className="container">
+                <h1 className="text-center p-4 text-bold bg-warning">{title}</h1>
+                <Articles />
                 <Section2/>
-            </div>
+            </section>
+            
         )
     }
 }

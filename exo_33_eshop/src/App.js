@@ -7,7 +7,7 @@ import React, { Component } from 'react'
 
 export default class App extends Component {
 
-  // inclus propriété et méthodes(if,for,forEach)
+  
 
   render() {
 

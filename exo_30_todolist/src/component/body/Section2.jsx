@@ -52,7 +52,7 @@ export default class Section2 extends Component {
         ))
 
         return (
-            <section className="bg-primary p-5">
+            <section id="section2" className="bg-primary p-5">
 
                 <div className="border-bottom border-dark mx-5">
                     <h1 className="text-center">{title}</h1>
