@@ -32,13 +32,13 @@ export default class Articles extends Component {
     }
 
     // Evenement du button acheter
-    handleBuy = (event)=>{
-        event.preventDefault()
-        console.log(this.state);
+    handleBuy = ()=>{
+        this.setState({money:this.props.money-1})
+        console.log(this.props.money);
     }
 
     render() {
-
+        
         // Structure de la box articles
         const card = this.state.articles.map((article) =>(
             <div key={article.id} className="col-md-4 bg-primary p-3"> 
@@ -47,7 +47,7 @@ export default class Articles extends Component {
                     <h4 className="py-4">{article.nom}</h4>
                     <p>Prix: {article.prix}€</p>
                     <p>Stock: {article.stock} unités</p>
-                    <button onClick={() => console.log("ok")} className="bg-success rounded text-white p-2">Acheter</button>
+                    <button onClick={this.handleBuy} className=" btn bg-success rounded text-white p-2 ">Acheter</button>
                 </div>               
             </div>
         ))

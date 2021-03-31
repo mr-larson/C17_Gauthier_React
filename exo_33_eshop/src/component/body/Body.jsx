@@ -1,19 +1,26 @@
 /*-------------- lien JSX --------------*/
 import Articles from './Articles'
-import Section2 from './Section2'
+import Panier from './Panier'
 
 import React, { Component } from 'react'
 
 export default class Body extends Component {
     
-    
+    state = {
+        money: 10 
+    }
     render() {
-        const title = "Test Eshop"
+
+        const myMoney =
+            <div className="py-3">
+                <h3>Mon argent : {this.state.money} €</h3>
+            </div>
+
         return (
             <section className="container">
-                <h1 className="text-center p-4 text-bold bg-warning">{title}</h1>
+                {myMoney}
                 <Articles />
-                <Section2/>
+                <Panier/>
             </section>
             
         )
