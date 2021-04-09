@@ -7,6 +7,7 @@ export default class Panier extends Component {
         commandes:[
             {id:1, nom:"pure"}
         ]
+        
     }
 
     // Supprime un article du tableau commandes
@@ -18,16 +19,7 @@ export default class Panier extends Component {
         this.setState({ commandes: commandes})
     }
 
-    // Ajoute un article au tableau initial
-    handleSubmit = () => {
-        const nom = this.state.newArticle
-        const article = {id: this.i, nom: nom}
-        this.i++
-        const articles =  [...this.state.articles]
-        articles.push(article)
-        this.setState({articles:articles})
-
-    }
+    
 
     render() {
 

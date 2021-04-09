@@ -44,7 +44,7 @@ export default class Section2 extends Component {
 
     render() {
         //ajout d'un titre
-        const title = "Titre de la liste"
+        const title = "Titre"
 
         // event de suppression
         const elements = this.state.clients.map((client) => (

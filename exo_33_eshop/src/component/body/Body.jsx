@@ -9,6 +9,7 @@ export default class Body extends Component {
     state = {
         money: 10 
     }
+    
     render() {
 
         const myMoney =

@@ -27,22 +27,24 @@ export default class Articles extends Component {
             stock : 5,
             image : "https://www.di.be/dw/image/v2/AATN_PRD/on/demandware.static/-/Sites-master-catalog-di/default/dw6d94363b/zoom/40045614_M.jpg?sw=2000&sh=2000&sm=fit"
         }
-        ]
-          
+        ],
+        money: 10  
     }
 
     // Evenement du button acheter
-    handleBuy = ()=>{
-        this.setState({money:this.props.money-1})
-        console.log(this.props.money);
-
-        /* let myBox = document.getElementsByTagName("myBox")
-
-        if (this.props.stock == 1) {
-            myBox = {backgroundColor : "orange"}
-        }else if (this.props.stock == 0) {
-            myBox = {backgroundColor : "red"} */
-            
+    handleClick = () =>{
+        this.setState({money: this.state.money - 1})
+        console.log(this.state)
+        
+       
+        const nom = this.state.newArticle
+        const article = {id: this.i, nom: nom}
+        this.i++
+        const articles =  [...this.state.articles]
+        articles.push(article)
+        this.setState({articles:articles})
+    
+          
         
     }
 
@@ -56,16 +58,24 @@ export default class Articles extends Component {
                     <h4 className="py-4">{article.nom}</h4>
                     <p>Prix: {article.prix}€</p>
                     <p>Stock: {article.stock} unités</p>
-                    <button onClick={this.handleBuy} onClick={this.handleSubmit} className=" btn bg-success rounded text-white p-2 ">Acheter</button>
+                    <button onClick={ () => this.handleClick()}  className=" btn bg-success rounded text-white p-2 ">Acheter</button>
                 </div>               
             </div>
         ))
 
+        const myMoney =
+            <div className="py-3">
+                <h3>Mon argent : {this.state.money} €</h3>
+            </div>
+
         return (
             // Affichage de la box articles
-            <section  className="myRow row justify-content-around align-items-center"> 
-                {card}
-            </section>
+            <div>
+                {myMoney}
+                <section  className="myRow row justify-content-around align-items-center"> 
+                    {card}
+                </section>
+            </div>
         )
     }
 }
