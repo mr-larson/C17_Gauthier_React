@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Section2 extends Component {
-    render() {
-        return (
-            <section>
-                
-            </section>
-        )
-    }
+export default function Section2() {
+    return (
+        <div>
+            
+        </div>
+    )
 }

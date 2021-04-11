@@ -1,15 +1,10 @@
-/*-------------- lien JSX --------------*/
-import Nav from './Nav'
+import React from 'react'
 
-
-import React, { Component } from 'react'
-
-export default class Header extends Component {
-    render() {
-        return (
-            <header>
-                <Nav/>
-            </header>
-        )
-    }
+export default function Header() {
+    return (
+        <header>
+            
+        </header>
+    )
 }
+

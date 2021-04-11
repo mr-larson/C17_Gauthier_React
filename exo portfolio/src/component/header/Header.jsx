@@ -1,11 +1,20 @@
 /*-------------- lien JSX --------------*/
-import Nav from './Nav'
+import Typed from "react-typed"
 
-
-export default function App() {
+export default function Header() {
     return (
-      <div className="App bg-danger">
-        <Nav />
-      </div>
+        <header className="header">
+            <div className="container title">
+                <h1>web development front-end and back-end</h1>
+                <Typed
+                    className="typed-text text-success"
+                    strings={["HTML", "CSS", "SASS", "Bootstrap", "Java Script", "React", "Python"]}
+                    typeSpeed={90}
+                    backSpeed={70}
+                    loop
+                />
+                <button type="button" class="btn">Contact me</button>
+            </div>
+        </header>
     )
   }
