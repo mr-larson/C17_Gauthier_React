@@ -10013,6 +10013,11 @@ h3 {
   min-height: 50vh;
   background: #000;
 }
+.card h3 {
+  font-weight: 500;
+  font-size: 3rem;
+  z-index: 1;
+}
 .card .row {
   position: relative;
   display: flex;
@@ -10021,8 +10026,8 @@ h3 {
 }
 .card .row .box {
   margin: 10vh 20px;
-  width: 320px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -10037,8 +10042,9 @@ h3 {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px black;
 }
-.card .row .box .content {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+.card .row .box .content img {
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 .card .row .box .content a {
   color: #28a745;
@@ -10069,13 +10075,29 @@ h3 {
   left: 50%;
   width: 40%;
   height: 100%;
-  background: linear-gradient(#11a342, #00ff37, #45d876);
+  background: linear-gradient(#11a342 20%, #00ff37 70%, #45d876);
   clip-path: circle(28% at 50% 70%);
 }
 
 /* section 5 et 6 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
+#section3 {
+  background: url(https://franckdsf.com/assets/imgs/opg-img.jpg), no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#section3 .a:hover {
+  box-shadow: 0 0 4px #afaeae;
+  transition: 0.3s;
+}
+
 /*footer*/
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/

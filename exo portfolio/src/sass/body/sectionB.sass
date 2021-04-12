@@ -12,6 +12,11 @@
     min-height: 50vh
     background: #000
 
+    h3
+        font-weight: 500
+        font-size: 3rem
+        z-index: 1
+
     .row
         position: relative
         display: flex
@@ -20,8 +25,8 @@
 
         .box
             margin: 10vh 20px
-            width: 320px
-            height: 400px
+            width: 400px
+            height: 500px
             color: $white
             display: flex
             justify-content: center
@@ -37,7 +42,9 @@
             box-shadow: 5px 5px 30px rgba(0,0,0)
 
             .content
-                border-bottom: 1px solid rgba(255,255,255, 0.05)
+                img
+                    border-radius: 5px
+                    margin-bottom: 10px
                 a
                     color: $green
             .content a:nth-child(2)
@@ -64,5 +71,5 @@
     left: 50%
     width: 40%
     height: 100%
-    background: linear-gradient(#11a342, #00ff37, #45d876) 
+    background: linear-gradient(#11a342 20%, #00ff37 70%, #45d876) 
     clip-path: circle(28% at 50% 70%)
