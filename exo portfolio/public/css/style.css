@@ -9940,6 +9940,9 @@ h3 {
 .navbar .navbar-brand {
   color: #28a745;
 }
+.navbar .navbar-brand img {
+  height: 11vh;
+}
 .navbar .nav-link {
   border-radius: 20px;
   margin: 0 5px;
@@ -10003,6 +10006,73 @@ h3 {
 /* section 3 et 4 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #000;
+}
+.card .row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .row .box {
+  margin: 10vh 20px;
+  width: 320px;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px black;
+}
+.card .row .box .content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.card .row .box .content a {
+  color: #28a745;
+}
+.card .row .box .content a:nth-child(2) {
+  color: #000;
+}
+.card .row .box:hover {
+  transition: 0.8s;
+  transform: translateY(-10px);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(#11a342, #00ff37, #45d876);
+  clip-path: circle(22% at 30% 20%);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(#11a342, #00ff37, #45d876);
+  clip-path: circle(28% at 50% 70%);
+}
+
 /* section 5 et 6 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
