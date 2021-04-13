@@ -13,19 +13,19 @@ export default function Nav() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <a className="nav-link active text-light" aria-current="page" href="###">Home</a>
+                            <a className="nav-link active text-light" aria-current="page" href="###">Home</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-light" href="###">About me</a>
+                            <a className="nav-link text-light" href="###">About me</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-light" href="section2">Lastest projects</a>
+                            <a className="nav-link text-light" href="section2">Lastest projects</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-light" href="###">How work</a>
+                            <a className="nav-link text-light" href="###">Shopify</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-light" href="###">Contacts</a>
+                            <a className="nav-link text-light" href="###">Contact me</a>
                         </li>
                     </ul>
                 </div>

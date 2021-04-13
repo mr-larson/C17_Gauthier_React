@@ -10064,8 +10064,8 @@ h3 {
   left: 0;
   width: 70%;
   height: 100%;
-  background: linear-gradient(#11a342, #00ff37, #45d876);
-  clip-path: circle(22% at 30% 20%);
+  background: linear-gradient(#1b472f, #99fcaf, #45d876);
+  clip-path: circle(25% at 43% 30%);
 }
 
 .card::after {
@@ -10075,15 +10075,15 @@ h3 {
   left: 50%;
   width: 40%;
   height: 100%;
-  background: linear-gradient(#11a342 20%, #00ff37 70%, #45d876);
-  clip-path: circle(28% at 50% 70%);
+  background: linear-gradient(#1b473d 20%, #17752c 70%, #45d876);
+  clip-path: circle(15% at 50% 60%);
 }
 
 /* section 5 et 6 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
 #section3 {
-  background: url(https://franckdsf.com/assets/imgs/opg-img.jpg), no-repeat;
+  background: url(../img/pingouin.jpg), no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
