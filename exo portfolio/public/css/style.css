@@ -9956,7 +9956,7 @@ h3 {
 
 .header {
   position: relative;
-  background: url(https://franckdsf.com/assets/imgs/opg-img.jpg), no-repeat;
+  background: url(../img/opg-img.jpg), no-repeat;
   background-size: cover;
   background-position: bottom;
   height: 90vh;
@@ -9971,9 +9971,11 @@ h3 {
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: 20;
 }
 .header .title h1 {
   text-transform: uppercase;
+  z-index: 1;
 }
 .header .btn {
   border: solid 1px #28a745;
@@ -10049,12 +10051,9 @@ h3 {
 .card .row .box .content a {
   color: #28a745;
 }
-.card .row .box .content a:nth-child(2) {
-  color: #000;
-}
 .card .row .box:hover {
   transition: 0.8s;
-  transform: translateY(-10px);
+  transform: translateY(-15px);
 }
 
 .card::before {
@@ -10064,7 +10063,7 @@ h3 {
   left: 0;
   width: 70%;
   height: 100%;
-  background: linear-gradient(#1b472f, #99fcaf, #45d876);
+  background: linear-gradient(#1b472f, #61f8a5, #45d876);
   clip-path: circle(25% at 43% 30%);
 }
 
@@ -10075,7 +10074,7 @@ h3 {
   left: 50%;
   width: 40%;
   height: 100%;
-  background: linear-gradient(#1b473d 20%, #17752c 70%, #45d876);
+  background: linear-gradient(#1b473d 20%, #61f8a5 70%, #45d876);
   clip-path: circle(15% at 50% 60%);
 }
 
@@ -10083,11 +10082,13 @@ h3 {
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
 #section3 {
-  background: url(../img/pingouin.jpg), no-repeat;
+  background: url(../img/workhard.jpg), no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 40vh;
+  background-position: left;
+  background-position: top;
+  height: 33vh;
   display: flex;
   align-items: center;
   justify-content: center;
