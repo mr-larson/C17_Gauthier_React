@@ -24,10 +24,8 @@
         align-items: center
 
         .box
-            margin: 10vh 20px
-            width: 400px
-            height: 500px
-            color: $white
+            margin: 10vh 20px           
+            color: #000
             display: flex
             justify-content: center
             align-items: center
@@ -42,6 +40,7 @@
             box-shadow: 5px 5px 30px rgba(0,0,0)
 
             .content
+                
                 img
                     border-radius: 5px
                     margin-bottom: 10px
@@ -60,7 +59,7 @@
     left: 0
     width: 70%
     height: 100%
-    background: linear-gradient(#1b472f, #61f8a5, #45d876) 
+    background: $green
     clip-path: circle(25% at 43% 30%)
 .card::after
     content: ''
@@ -69,5 +68,5 @@
     left: 50%
     width: 40%
     height: 100%
-    background: linear-gradient(#1b473d 20%, #61f8a5 70%, #45d876) 
+    background: $green
     clip-path: circle(15% at 50% 60%)

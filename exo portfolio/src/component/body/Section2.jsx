@@ -1,21 +1,24 @@
 import React from 'react'
+import Tilt from 'react-vanilla-tilt'
 
 export default function Section2() {
     return (
         <section id="section2" className="card container-fluid">
             <h3 className="text-light py-5">Lastest projects</h3>
                 <div class="row">
-
-                    <div class="box col-sm-12 col-md-offset-1 col-md-3">
-                        <span></span>
-                        <div className="content">
-                            <img class="card-img-top" src="./img/awa img.png" alt="img de site"></img>
-                            <h2>Site Roster</h2>
-                            <p>Durant cette exercice mon objectif était de créer un classement automatisé de lutteurs ce mettant à jour après chaque combats</p>
-                            <a href="https://github.com/mr-larson/championship_guacamolito" target="_blank"> Read more</a>
-                        </div>
+                    <div class="col-sm-12 col-md-offset-1 col-md-3">
+                        <Tilt>
+                            <div class="box">
+                                <span></span>
+                                <div className="content">
+                                    <img class="card-img-top" src="./img/awa img.png" alt="img de site"></img>
+                                    <h2>Site Roster</h2>
+                                    <p>Durant cette exercice mon objectif était de créer un classement automatisé de lutteurs ce mettant à jour après chaque combats</p>
+                                    <a href="https://github.com/mr-larson/championship_guacamolito" target="_blank"> Read more</a>
+                                </div>
+                            </div>
+                        </Tilt>
                     </div>
-
                     <div class="box col-sm-12 col-md-4">
                         <span></span>
                         <div className="content">

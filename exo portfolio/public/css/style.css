@@ -9938,7 +9938,18 @@ h3 {
   min-height: 12vh;
 }
 .navbar .navbar-brand {
-  color: #28a745;
+  transition: transform 250ms, opacity 400ms;
+  animation: apparition1 1.5s 0.5s ease-out;
+}
+@keyframes apparition1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .navbar .navbar-brand img {
   height: 11vh;
@@ -9946,12 +9957,33 @@ h3 {
 .navbar .nav-link {
   border-radius: 20px;
   margin: 0 5px;
-  transition: 0.5s;
+  transition: transform 250ms, opacity 400ms;
+  animation: apparition2 1.5s 0.2s ease-out;
+}
+@keyframes apparition2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .navbar .nav-link:hover {
   color: #28a745 !important;
   background: #fff;
   box-shadow: 0 0 10px #fff, 0 0 40px #bec4bf;
+  transform: scale(1.05);
+  animation: apparition5 0.1s 0.1s ease;
+}
+@keyframes apparition5 {
+  0% {
+    opacity: 2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header {
@@ -9971,11 +10003,20 @@ h3 {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 20;
 }
 .header .title h1 {
   text-transform: uppercase;
-  z-index: 1;
+  animation: apparition 2s 1s ease-out;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .header .btn {
   border: solid 1px #28a745;
@@ -9985,6 +10026,17 @@ h3 {
   overflow: hidden;
   transition: 0.5s;
   color: #28a745;
+  animation: apparition3 2.5s 1.5s ease-out;
+}
+@keyframes apparition3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .header .btn:hover {
   color: #fff;
@@ -10028,9 +10080,7 @@ h3 {
 }
 .card .row .box {
   margin: 10vh 20px;
-  width: 400px;
-  height: 500px;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10063,7 +10113,7 @@ h3 {
   left: 0;
   width: 70%;
   height: 100%;
-  background: linear-gradient(#1b472f, #61f8a5, #45d876);
+  background: #28a745;
   clip-path: circle(25% at 43% 30%);
 }
 
@@ -10074,29 +10124,40 @@ h3 {
   left: 50%;
   width: 40%;
   height: 100%;
-  background: linear-gradient(#1b473d 20%, #61f8a5 70%, #45d876);
+  background: #28a745;
   clip-path: circle(15% at 50% 60%);
 }
 
 /* section 5 et 6 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
-#section3 {
+.challenge {
   background: url(../img/workhard.jpg), no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
   background-position: top;
-  height: 33vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-#section3 .a:hover {
+.challenge .contact {
+  display: block;
+}
+.challenge .contact .contact:hover {
   box-shadow: 0 0 4px #afaeae;
   transition: 0.3s;
+}
+
+.clients {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 /*footer*/
@@ -10144,6 +10205,16 @@ h3 {
 .link-footer {
   background: #000;
   min-height: 10vh;
+}
+
+/*e-shop*/
+/*-------------- lien sass --------------*/
+/*---------------- style -------------*/
+.eshop {
+  display: none;
+}
+.eshop img {
+  height: 35vh;
 }
 
 /*# sourceMappingURL=style.css.map */
