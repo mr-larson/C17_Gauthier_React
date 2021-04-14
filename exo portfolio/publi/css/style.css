@@ -10162,6 +10162,9 @@ h3 {
 /* e-shop */
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
+.eshop {
+  display: none;
+}
 .eshop img {
   height: 35vh;
 }
