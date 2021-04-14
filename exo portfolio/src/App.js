@@ -6,7 +6,6 @@ import Section1 from './component/body/Section1'
 import Section2 from './component/body/Section2'
 import Section3 from './component/body/Section3'
 import MainShop from './component/e-shop/MainShop'
-import Formulaire from './component/formulaire/Formulaire'
 import Footer from './component/footer/Footer'
 
 
@@ -34,7 +33,6 @@ export default function App() {
         <Section1/>
         <Section2/>
         <Section3/>
-        <Formulaire/>
         <MainShop/>
         <Footer/>
     </div>

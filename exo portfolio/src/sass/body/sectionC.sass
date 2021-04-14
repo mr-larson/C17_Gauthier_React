@@ -5,30 +5,52 @@
 
 /*---------------- style -------------*/
 // Section 3
-.challenge
+.formulaire
     background: url(../img/workhard.jpg),no-repeat
     background-size: cover
     background-repeat: no-repeat
     background-attachment: fixed
     background-position: left
     background-position: top
-    height: 15vh
+    height: 25vh
     display: flex
     align-items: center
     justify-content: center
     text-align: center
-    .contact
-        
-        .contact:hover 
-            box-shadow:  0 0 4px rgb(175, 174, 174)
-            transition: 0.3s
+    .contactBtn
+        border-radius: 20px
+        color: $white
+        background: #000
+    .contactBtn:hover 
+        box-shadow: 0 0 5px #000
+        background: $green
 
-// section commentaires clients
-.clients
-    position: relative
-    display: flex
-    justify-content: center
-    align-items: center
-    overflow: hidden
+    .modal
+        background: #00000077
+        
+
+        .bac
+            background: url(../img/mac-sepia.jpg),no-repeat
+            background-size: cover
+            box-shadow: 0 0 10px $white, 0 0 40px #bec4bf
+            animation: apparition1 1.5s  ease-out
+
+            @keyframes apparition1
+                0%
+                    opacity: 0
+                    transform: translateX(-50px)  
+                100%
+                    opacity:1
+                    transform: none 
+
+            h5
+                font-size: 2.2em
+                font-weight: bold
+
+            label
+                font-weight: bold
+            
+
+
 
     

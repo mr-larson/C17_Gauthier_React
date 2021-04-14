@@ -1,5 +1,6 @@
 import Section1 from './SectionStock'
 import Section2 from './SectionPanier'
+import Tilt from 'react-vanilla-tilt'
 
 import React, { Component } from 'react'
 
@@ -82,6 +83,7 @@ export default class MainShop extends Component {
                 )
               })}
             </ul>
+            <Tilt options={{ scale: 2, speed: 300,"max-glare": 1 }}></Tilt>
           </div>
         )
       } 
