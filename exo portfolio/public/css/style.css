@@ -9981,7 +9981,7 @@ h3 {
   background: url(../img/opg-img.jpg), no-repeat;
   background-size: cover;
   background-position: bottom;
-  height: 90vh;
+  height: 100vh;
 }
 .header .title {
   display: flex;
@@ -9996,7 +9996,7 @@ h3 {
 }
 .header .title h1 {
   text-transform: uppercase;
-  animation: apparition 2s 1s ease-out;
+  animation: apparition 2s ease-out;
 }
 @keyframes apparition {
   0% {
@@ -10008,29 +10008,56 @@ h3 {
     transform: none;
   }
 }
-.header .btn {
-  border: solid 1px #28a745;
-  margin-top: 5vh;
-  position: relative;
+.header .title .contactBtn {
+  border-radius: 20px;
+  color: #fff;
+  background: #000;
   z-index: 2;
-  overflow: hidden;
-  transition: 0.5s;
-  color: #28a745;
-  animation: apparition3 2.5s 1.5s ease-out;
+  animation: apparition1 3s ease-out;
 }
-@keyframes apparition3 {
+.header .title .contactBtn:hover {
+  box-shadow: 0 0 5px #000;
+  background: #28a745;
+}
+.header .title .modal {
+  background: #00000077;
+}
+.header .title .modal .myCont {
+  background: #0000008e;
+  box-shadow: 0 0 10px #fff, 0 0 40px #bec4bf;
+  animation: apparition1 1.5s ease-out;
+}
+@keyframes apparition1 {
   0% {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
     transform: none;
   }
 }
-.header .btn:hover {
+.header .title .modal .myCont h5 {
+  font-size: 2.2em;
+  font-weight: bold;
   color: #fff;
-  background: #28a745;
+  text-shadow: 0 0 1px #FFF;
+}
+.header .title .modal .myCont .bac {
+  background: url(../img/neon.jpg), no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header .title .modal .myCont .bac label {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 1px #FFF;
+}
+.header .title .modal .myCont .bac input {
+  border-radius: 5px;
+}
+.header .title .modal .myCont .bac textarea {
+  border-radius: 5px;
 }
 
 .typed-text {
@@ -10047,6 +10074,30 @@ h3 {
 /* section 1 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
+#section1 {
+  position: relative;
+}
+#section1 .myAbout {
+  height: 80vh;
+  text-align: center;
+  color: #fff;
+  background: #080808;
+}
+#section1 .myAbout h1 {
+  animation: apparition2 1.5s ease-out;
+}
+#section1 .myAbout p {
+  padding: 4px;
+  animation: apparition1 1.5s ease-out;
+}
+#section1 .myImg {
+  width: 40vw;
+  background: url(../img/mickey.jpg), no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%);
+}
+
 /* section 2 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
@@ -10061,6 +10112,7 @@ h3 {
   font-weight: 500;
   font-size: 3rem;
   z-index: 1;
+  animation: apparition2 1.5s ease-out;
 }
 .card .row {
   position: relative;
@@ -10148,9 +10200,8 @@ h3 {
 .formulaire .modal {
   background: #00000077;
 }
-.formulaire .modal .bac {
-  background: url(../img/mac-sepia.jpg), no-repeat;
-  background-size: cover;
+.formulaire .modal .myCont {
+  background: #0000008e;
   box-shadow: 0 0 10px #fff, 0 0 40px #bec4bf;
   animation: apparition1 1.5s ease-out;
 }
@@ -10164,22 +10215,34 @@ h3 {
     transform: none;
   }
 }
-.formulaire .modal .bac h5 {
+.formulaire .modal .myCont h5 {
   font-size: 2.2em;
   font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 1px #FFF;
 }
-.formulaire .modal .bac label {
+.formulaire .modal .myCont .bac {
+  background: url(../img/neon.jpg), no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.formulaire .modal .myCont label {
   font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #FFF;
+}
+.formulaire .modal .myCont input {
+  border-radius: 5px;
+}
+.formulaire .modal .myCont textarea {
+  border-radius: 5px;
 }
 
 /* e-shop */
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
-.eshop {
-  display: none;
-}
 .eshop img {
-  height: 35vh;
+  height: 15vh;
 }
 
 /*footer*/

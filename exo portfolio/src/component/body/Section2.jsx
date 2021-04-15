@@ -1,5 +1,4 @@
 import React from 'react'
-import Tilt from 'react-vanilla-tilt'
 
 export default function Section2() {
     return (

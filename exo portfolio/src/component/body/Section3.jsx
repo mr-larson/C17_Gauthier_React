@@ -23,7 +23,7 @@ export default class Section3 extends Component {
     render() {
 
         return (
-            <section>
+            <section id="section3">
                 <div className="formulaire container-fluid p-0">
                 
                     <button type="button" className="contactBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -34,12 +34,13 @@ export default class Section3 extends Component {
                     <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
                         <div className="modal-dialog">
-                            <div className="modal-content bac">
+                            <div className="modal-content myCont">
+                                
                                 <div className="modal-header">
                                     <h5 className="modal-title" id="staticBackdropLabel"> Me contacter</h5>
                                     <button type="button" className="btn-close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">x</button>
                                 </div>
-                                <div className="modal-body">
+                                <div className="modal-body bac">
                                     <div className="row">
                                         <div className="col-sm-offset-2 col-sm-8">
                                             <label htmlFor="nom" className="px-2" > Entrez votre nom</label>

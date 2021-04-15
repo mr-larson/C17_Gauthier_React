@@ -13,7 +13,6 @@
         transition: transform 250ms, opacity 400ms
         animation: apparition1 1.5s 0.5s ease-out
 
-       
         img
             height: 11vh
         
@@ -52,7 +51,7 @@
     background: url(../img/opg-img.jpg),no-repeat
     background-size: cover
     background-position: bottom
-    height: 90vh
+    height: 100vh
 
     .title
         display: flex
@@ -67,7 +66,7 @@
         
         h1
             text-transform: uppercase
-            animation: apparition 2s 1s ease-out
+            animation: apparition 2s  ease-out
 
             @keyframes apparition
                 0%
@@ -78,28 +77,55 @@
                     transform: none
             
 
-    .btn
-        border: solid 1px $green
-        margin-top: 5vh
-        position: relative
-        z-index: 2
-        overflow: hidden
-        transition: 0.5s
-        color: $green
-        animation: apparition3 2.5s 1.5s ease-out
+        .contactBtn
+            border-radius: 20px
+            color: $white
+            background: #000
+            z-index: 2
+            animation: apparition1 3s  ease-out
+            
+        .contactBtn:hover 
+            box-shadow: 0 0 5px #000
+            background: $green
 
-        @keyframes apparition3
-            0%
-                opacity: 0
-                transform: translateY(-40px)  
-            100%
-                opacity:1
-                transform: none
-        
+        .modal
+            background: #00000077
 
-    .btn:hover
-        color: $white
-        background: $green
+            .myCont
+                background: #0000008e
+                box-shadow: 0 0 10px $white, 0 0 40px #bec4bf
+                animation: apparition1 1.5s  ease-out
+
+                @keyframes apparition1
+                    0%
+                        opacity: 0
+                        transform: translateX(-50px)  
+                    
+                    100%
+                        opacity:1
+                        transform: none 
+
+                h5
+                    font-size: 2.2em
+                    font-weight: bold
+                    color: $white
+                    text-shadow: 0 0 1px #FFF
+
+                .bac
+                    background: url(../img/neon.jpg),no-repeat
+                    background-position: center
+                    background-size: cover
+
+                    label
+                        font-weight: bold
+                        color: $white
+                        text-shadow: 0 0 1px #FFF
+                    input 
+                        border-radius: 5px
+                    textarea 
+                        border-radius: 5px
+                    
+
         
             
 // Typed Text

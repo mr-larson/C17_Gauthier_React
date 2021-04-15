@@ -1,6 +1,6 @@
-import Section1 from './SectionStock'
-import Section2 from './SectionPanier'
-import Tilt from 'react-vanilla-tilt'
+import SectionStock from './SectionStock'
+import SectionPanier from './SectionPanier'
+
 
 import React, { Component } from 'react'
 
@@ -62,7 +62,7 @@ export default class MainShop extends Component {
             <div className="row">
               {this.state.articles.map((e, i) => {
                 return (
-                  <Section1
+                  <SectionStock
                     key={i}
                     article={e}
                     argent={this.state.argent}
@@ -75,7 +75,7 @@ export default class MainShop extends Component {
             <ul className="list-group">
               {this.state.panier.map((e, i) => {
                 return (
-                  <Section2
+                  <SectionPanier
                     key={i}
                     article={e}
                     retirer={() => this.retirer(i)}
@@ -83,7 +83,6 @@ export default class MainShop extends Component {
                 )
               })}
             </ul>
-            <Tilt options={{ scale: 2, speed: 300,"max-glare": 1 }}></Tilt>
           </div>
         )
       } 
