@@ -26,6 +26,19 @@ export default function App() {
           <Switch>
 
             <Route path="/Section1">
+            <Particles
+                params={{
+                  particles: {
+                    number: {
+                      value: 20,
+                      density:{
+                        enable: true,
+                        value_area: 900
+                      }
+                    }
+                  }
+                }}
+              />
               <Section1/>
               <Section3/>
             </Route>
@@ -38,7 +51,7 @@ export default function App() {
                       value: 50,
                       density:{
                         enable: true,
-                        value_area: 400
+                        value_area: 600
                       }
                     }
                   }
@@ -62,7 +75,7 @@ export default function App() {
                       value: 60,
                       density:{
                         enable: true,
-                        value_area: 500
+                        value_area: 900
                       }
                     }
                   }

@@ -58,12 +58,25 @@
 .card::before
     content: ''
     position: absolute
-    top: 0
+    top: 10px
     left: 0
     width: 70%
     height: 100%
     background: $green
     clip-path: circle(25% at 43% 30%)
+    animation: animation3 5.5s infinite
+
+    @keyframes animation3
+            0%
+                top: 10px
+            20%
+                left: 50px
+            60%
+                left: -20px
+                top: 50px
+            100%
+                left: 0px
+                top: 10px
 .card::after
     content: ''
     position: absolute
@@ -73,3 +86,23 @@
     height: 100%
     background: $green
     clip-path: circle(15% at 50% 60%)
+    animation: animation4 2.5s infinite
+
+    @keyframes animation4
+            0%
+                top: 10px
+            20%
+                right: -50px
+            60%
+                right: -20px
+                top: -70px
+            100%
+                right: -10px
+                top: 10px
+
+@media screen and ( max-width: 576px )
+    .card::before
+        display: none
+    .card::after
+        display: none
+    

@@ -9945,6 +9945,7 @@ h3 {
   height: 11vh;
 }
 .navbar .nav-link {
+  padding-left: 10px;
   border-radius: 20px;
   margin: 0 5px;
   transition: transform 250ms, opacity 400ms;
@@ -10074,14 +10075,107 @@ h3 {
 /* section 1 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
-#section1 {
-  height: 60vh;
-  background: url(../img/plante.jpg), no-repeat;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+.titre {
+  text-align: center;
+  padding: 15px;
+  animation: apparition1 1.5s ease-out;
 }
 
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  min-height: 85vh;
+}
+#section1 .myCol {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+#section1 .myCol .loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #000000;
+  animation: animate2 2s linear infinite;
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#section1 .myCol .loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #00ff7380);
+  background-size: 100px 180px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+#section1 .myCol .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #00ff88;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 10px #00ff80, 0 0 20px #00ff88, 0 0 30px #00ff88, 0 0 40px #00ff88, 0 0 50px #00ff88, 0 0 60px #00ff88, 0 0 70px #00ff88, 0 0 80px #00ff88;
+}
+#section1 span {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #000000;
+  border-radius: 50%;
+  z-index: 2;
+}
+#section1 .mycard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-right: 80px;
+  animation: apparition1 1.5s ease-out;
+}
+
+@media screen and (min-width: 576px) {
+  .myCol {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+  }
+
+  .mycard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-right: 80px;
+    -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+  }
+}
 /* section 2 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
@@ -10137,12 +10231,29 @@ h3 {
 .card::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 70%;
   height: 100%;
   background: #28a745;
   clip-path: circle(25% at 43% 30%);
+  animation: animation3 5.5s infinite;
+}
+@keyframes animation3 {
+  0% {
+    top: 10px;
+  }
+  20% {
+    left: 50px;
+  }
+  60% {
+    left: -20px;
+    top: 50px;
+  }
+  100% {
+    left: 0px;
+    top: 10px;
+  }
 }
 
 .card::after {
@@ -10154,8 +10265,34 @@ h3 {
   height: 100%;
   background: #28a745;
   clip-path: circle(15% at 50% 60%);
+  animation: animation4 2.5s infinite;
+}
+@keyframes animation4 {
+  0% {
+    top: 10px;
+  }
+  20% {
+    right: -50px;
+  }
+  60% {
+    right: -20px;
+    top: -70px;
+  }
+  100% {
+    right: -10px;
+    top: 10px;
+  }
 }
 
+@media screen and (max-width: 576px) {
+  .card::before {
+    display: none;
+  }
+
+  .card::after {
+    display: none;
+  }
+}
 /* section 3 */ 
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
