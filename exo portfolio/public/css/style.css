@@ -10075,27 +10075,11 @@ h3 {
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
 #section1 {
-  position: relative;
-}
-#section1 .myAbout {
-  height: 80vh;
-  text-align: center;
-  color: #fff;
-  background: #080808;
-}
-#section1 .myAbout h1 {
-  animation: apparition2 1.5s ease-out;
-}
-#section1 .myAbout p {
-  padding: 4px;
-  animation: apparition1 1.5s ease-out;
-}
-#section1 .myImg {
-  width: 40vw;
-  background: url(../img/mickey.jpg), no-repeat;
+  height: 60vh;
+  background: url(../img/plante.jpg), no-repeat;
   background-size: cover;
-  background-position: center;
-  filter: brightness(60%);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 /* section 2 */ 

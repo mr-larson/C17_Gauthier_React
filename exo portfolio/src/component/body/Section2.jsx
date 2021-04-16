@@ -3,7 +3,7 @@ import React from 'react'
 export default function Section2() {
     return (
         <section id="section2" className="card container-fluid">
-            <h3 className="text-light py-5">Lastest projects</h3>
+            <h3 className="text-light pt-4">Lastest projects</h3>
                 <div class="row">
                     <div class="box col-sm-12 col-md-offset-1 col-md-3" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                         
