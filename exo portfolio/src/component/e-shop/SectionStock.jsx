@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class SectionStock extends Component {
     render() {
         return (
-            <div className="col-4-sm-6">
+            <div className="col-4 sm-offset-1-sm-6">
                 <div className="cards">
                     <img src={this.props.article.img} className="card-img-top" alt="..." />
                     <div className={`card-body ${this.props.article.stock === 1 ? "bg-warning" : this.props.article.stock === 0 ? "bg-danger" : "bg-white"}`}>

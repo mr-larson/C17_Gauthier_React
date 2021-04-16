@@ -9947,7 +9947,7 @@ h3 {
   animation: apparition1 1.5s 0.5s ease-out;
 }
 .navbar .navbar-brand img {
-  height: 11vh;
+  height: 9vh;
 }
 .navbar .nav-link {
   padding-left: 10px;
@@ -10048,6 +10048,7 @@ h3 {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 1px #FFF;
+  letter-spacing: 2px;
 }
 .header .title .modal .myCont .bac {
   background: url(../img/neon.jpg), no-repeat;
@@ -10057,7 +10058,8 @@ h3 {
 .header .title .modal .myCont .bac label {
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 0 1px #FFF;
+  text-shadow: 0 0 0.2px #FFF;
+  letter-spacing: 2px;
 }
 .header .title .modal .myCont .bac input {
   border-radius: 5px;
@@ -10140,7 +10142,7 @@ h3 {
   background: #00ff88;
   border-radius: 50%;
   z-index: 10;
-  box-shadow: 0 0 10px #00ff80, 0 0 20px #00ff88, 0 0 30px #00ff88, 0 0 40px #00ff88, 0 0 50px #00ff88, 0 0 60px #00ff88, 0 0 70px #00ff88, 0 0 80px #00ff88;
+  box-shadow: 0 0 10px #00ff80, 0 0 20px #00ff88, 0 0 30px #00ff88, 0 0 40px #00ff88, 0 0 50px #00ff88, 0 0 60px #00ff88, 0 0 70px #00ff88, 0 0 80px #00ff88, 0 0 90px #00ff88, 0 0 100px #00ff88, 0 0 110px #00ff88;
 }
 #section1 span {
   content: "";
@@ -10345,7 +10347,8 @@ h3 {
   font-size: 2.2em;
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 0 1px #FFF;
+  text-shadow: 0 0 0.2px #FFF;
+  letter-spacing: 2px;
 }
 .formulaire .modal .myCont .bac {
   background: url(../img/neon.jpg), no-repeat;
@@ -10356,6 +10359,7 @@ h3 {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 10px #FFF;
+  letter-spacing: 2px;
 }
 .formulaire .modal .myCont input {
   border-radius: 5px;
@@ -10369,8 +10373,21 @@ h3 {
 /*---------------- style -------------*/
 .eshop {
   min-height: 50vh;
+  animation: apparition1 2s ease-out;
 }
-.eshop .row img {
+.eshop h1 {
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: solid 1px #00000063;
+}
+.eshop h2 {
+  padding: 30px;
+}
+.eshop .row {
+  border-bottom: solid 1px #000;
+  padding-bottom: 40px;
+}
+.eshop .row .card img {
   height: 35vh;
   width: 20vw;
 }

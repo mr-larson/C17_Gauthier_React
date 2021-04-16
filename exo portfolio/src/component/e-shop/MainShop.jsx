@@ -58,7 +58,8 @@ export default class MainShop extends Component {
       render() {
         return (
           <div className="eshop container p-5">
-            <h2>Mon argent : {this.state.argent}€</h2>
+            <h1>Exemple de e-shop</h1>
+            <h2>Argent : {this.state.argent}€</h2>
             <div className="row">
               {this.state.articles.map((e, i) => {
                 return (
