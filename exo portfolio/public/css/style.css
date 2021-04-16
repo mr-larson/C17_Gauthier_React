@@ -10362,8 +10362,12 @@ h3 {
 /* e-shop */
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
-.eshop img {
-  height: 15vh;
+.eshop {
+  min-height: 50vh;
+}
+.eshop .row img {
+  height: 35vh;
+  width: 20vw;
 }
 
 /*footer*/

@@ -57,7 +57,7 @@ export default class MainShop extends Component {
     
       render() {
         return (
-          <div className="eshop container p-5 modal-dialog modal-fullscreen-sm-down">
+          <div className="eshop container p-5">
             <h2>Mon argent : {this.state.argent}€</h2>
             <div className="row">
               {this.state.articles.map((e, i) => {
