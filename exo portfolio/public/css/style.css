@@ -9931,6 +9931,11 @@ h3 {
     border-color: #dee2e6;
   }
 }
+/*fonts*/
+@font-face {
+  font-family: "Libre_Baskerville";
+  src: url("../../src/fonts/Libre_Baskerville/LibreBaskerville-Italic");
+}
 /*Header*/
 /*-------------- lien sass --------------*/
 /*---------------- style -------------*/
@@ -10415,6 +10420,10 @@ h3 {
 .link-footer {
   background: #000;
   min-height: 10vh;
+}
+
+* {
+  font-family: "Libre_Baskerville";
 }
 
 /*# sourceMappingURL=style.css.map */
