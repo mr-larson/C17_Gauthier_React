@@ -10238,28 +10238,29 @@ h3 {
 .card::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 0;
   width: 70%;
   height: 100%;
   background: #28a745;
   clip-path: circle(25% at 43% 30%);
-  animation: animation3 5.5s infinite;
+  animation: animation3 6.5s infinite;
 }
 @keyframes animation3 {
   0% {
-    top: 10px;
+    left: 0px;
   }
   20% {
     left: 50px;
   }
-  60% {
+  50% {
+    left: 150px;
+  }
+  70% {
     left: -20px;
-    top: 50px;
   }
   100% {
     left: 0px;
-    top: 10px;
   }
 }
 
@@ -10272,21 +10273,22 @@ h3 {
   height: 100%;
   background: #28a745;
   clip-path: circle(15% at 50% 60%);
-  animation: animation4 2.5s infinite;
+  animation: animation4 5.5s infinite;
 }
 @keyframes animation4 {
   0% {
     top: 10px;
   }
   20% {
-    right: -50px;
-  }
-  60% {
-    right: -20px;
+    left: 500px;
     top: -70px;
   }
+  60% {
+    left: 200px;
+    top: -200px;
+  }
   100% {
-    right: -10px;
+    left: 800px;
     top: 10px;
   }
 }
