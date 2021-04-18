@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 
 export default class MainShop extends Component {
     state = {
-        argent: 50,
+        argent: 10,
         panier: [],
         articles: [
           {
@@ -59,7 +59,7 @@ export default class MainShop extends Component {
         return (
           <div className="eshop container p-5">
             <h1>Exemple de e-shop</h1>
-            <h2>Argent : {this.state.argent}€</h2>
+            <h2>Argent : {this.state.argent} €</h2>
             <div className="row">
               {this.state.articles.map((e, i) => {
                 return (
